@@ -38,7 +38,7 @@ div{
   
 }
 
-ul{
+nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -47,7 +47,7 @@ ul{
   border-radius: 10px;
 }
 
-li {
+nav ul li {
   float: left;
 }
 
