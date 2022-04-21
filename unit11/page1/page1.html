@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites Form</title>
+  <link href="page1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <a href='/unit11/index.html' class='button'>Home</a>
+  </header>
+  
+  <h1>Favorites Form</h1>
+  <form action='http://webdevbasics.net/scripts/demo.php'method='post'>
+    
+    <label for='user'>Username:</label><br>
+    <input type='text' id='user' name='user' size='30'><br>
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd" size='30'><br><br>
+
+    <div class='month' id='month' style='float:left;'>
+      <p>Your Favorite Month:<p>
+      <input type='radio' id='month1' name='month' value='January'>
+      <label for='month1'>January</label><br>
+      <input type='radio' id='month2' name='month' value='February'>
+      <label for='month2'>February</label><br>
+      <input type='radio' id='month3' name='month' value='March'>
+      <label for='month3'>March</label><br>
+      <input type='radio' id='month4' name='month' value='April'>
+      <label for='month4'>April</label><br>
+      <input type='radio' id='month5' name='month' value='May'>
+      <label for='month5'>May</label><br>
+      <input type='radio' id='month6' name='month' value='June'>
+      <label for='month6'>June</label><br>
+      <input type='radio' id='month7' name='month' value='July'>
+      <label for='month7'>July</label><br>
+      <input type='radio' id='month8' name='month' value='August'>
+      <label for='month8'>August</label><br>
+      <input type='radio' id='month9' name='month' value='September'>
+      <label for='month1'>September</label><br>
+      <input type='radio' id='month10' name='month' value='October'>
+      <label for='month10'>October</label><br>
+      <input type='radio' id='month11' name='month' value='November'>
+      <label for='month11'>November</label><br>
+      <input type='radio' id='month12' name='month' value='December'>
+      <label for='month12'>December</label><br><br>
+    </div>
+
+    <div class='social' id='social' style='float:left;'>
+      <p>Your Favorite Social Media Sites</p>
+      <input type='checkbox' id='social1' name='social1' value='Facebook'>
+      <label for='social1'>Facebook</label><br>
+      <input type='checkbox' id='social2' name='social2' value='Instagram'>
+      <label for='social2'>Instagram</label><br>
+      <input type='checkbox' id='social3' name='social3' value='Twitter'>
+      <label for='social3'>Twitter</label><br>
+      <input type='checkbox' id='social4' name='social4' value='Snapchat'>
+      <label for='social4'>Snapchat</label><br>
+      <input type='checkbox' id='social5' name='social5' value='All'>
+      <label for='social5'>All of the Above</label><br>
+      <input type='checkbox' id='social6' name='social6' value='Other'>
+      <label for='social6'>Other:</label>
+      <input type='text' id='social6' name='social6'>
+    </div>
+    
+    <div style="clear:both;">&nbsp;</div>
+
+    <fieldset><br>
+      <legend>Shipping Address:</legend>
+      <label for='line1'>AddressLine1:</label><br>
+      <input type='text' id='line1' name='line1'><br>
+      <label for='line2'>AddressLine2:</label><br>
+      <input type='text' id='line2' name='line2'><br>
+      <label for='line3'>City:</label><br>
+      <input type='text' id='line3' name='line3'><br>
+      <label for='line4'>State:</label><br>
+      <input type='text' id='line4' name='line4'><br>
+      <label for='line5'>ZIP:</label><br>
+      <input type='tel' id='line5' name='line5' patter="[0-9]{5}" maxlength='5' placeholder='12345'>
+    </fieldset><br>
+
+    <div class='submit'>
+      <input type='image' name='submit' src='images/button_submit.png'>
+    </div>
+    
+    <input type='hidden' id='userId' name='userId' value='8675309'>
+  
+  </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.social{
+  margin-left: 30px;
+}
+
+fieldset{
+  border: 0;
+}
+
+/* .mobile #month, .mobile #social{
+  float: none;
+  display: block;
+  margin-bottom: 15px;
+} */
+
+.button{
+  background: #ffff00;
+  background: linear-gradient(#ffff00, #0000ff);
+  border: 1px solid #556699;
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: normal bold 12px/35px "Open Sans", sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 11px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: white;
+  }
+
+  .social{
+    margin-left: 0px;
+  }
+}
