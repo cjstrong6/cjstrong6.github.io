@@ -3,19 +3,29 @@ printPyramid(5);
 // TODO #2
 // Take in user input for the height
 
+
+document.addEventListener("DOMContentLoaded", function() {
 let n = prompt("Enter a number for the height of the pyramid: ");
 let string = "";
 for (let i = 1; i <= n; i++) {
   // printing spaces
   for (let j = 0; j < n - i; j++) {
-    string += " ";
+    string += ".";
   }
   // printing star
   for (let k = 0; k < i; k++) {
-    string += "*";
+    string += "#";
   }
   string += "\n";
+
+  newP.innerText = string;
+  document.getElementById("pyramid").appendChild(newP);
 }
+});
+
+newP = document.createElement("p");
+
+
 console.log(string);
 
 
@@ -31,8 +41,8 @@ console.log(string);
  *      ######
  */
 function printPyramid(height) {
-    console.log("Uh oh... the pyramid is under construction.");
-    console.log("Check back soon, our developers are hard at work as we speak!");
+//     console.log("Uh oh... the pyramid is under construction.");
+//     console.log("Check back soon, our developers are hard at work as we speak!");
 
     // TODO #1
     // print that pyramid!
