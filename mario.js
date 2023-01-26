@@ -20,10 +20,11 @@ for (let i = 1; i <= n; i++) {
 
   newP.innerText = string;
   document.getElementById("pyramid").appendChild(newP);
+  
 }
 });
 
-newP = document.createElement("p");
+  newP = document.createElement("p");
 
 
 console.log(string);
