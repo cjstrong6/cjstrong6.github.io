@@ -1,32 +1,46 @@
-// printPyramid(5);
-// TODO #2
-// Take in user input for the height
-const button = document.getElementById("pyramid-button");
-      button.addEventListener("click", () => {
-       document.getElementById("pyramid").innerText = "";
-        
-        n = document.getElementById("height").value;
-        let string = "";
-        
-for (let i = 1; i <= n; i++) {
-  string = "";
-  // printing spaces
-  for (let j = 0; j < n - i; j++) {
-    string += ".";
+const heightRange = document.getElementById("height-range");
+const pyramid = document.getElementById("pyramid");
+const characterSelect = document.getElementById("character-select");
+
+function drawPyramid(){
+  pyramid.innerText = "";
+
+  const height = heightRange.value;
+  const character = characterSelect.value;
+
+  let string = "";
+
+  for (let i = 1; i <= height; i++){
+    string = "";
+
+    for (let j = 0; j < height - i; j++){
+      string += " ";
+    }
+
+    for (let k = 0; k < i; k++){
+      string += character;
+    }
+
+    string += "\n";
+
+    const newP = document.createElement("pre");
+
+    // Create a text node with the content you want to display
+    const textNode = document.createTextNode(string);
+
+// Append the text node to the paragraph element
+    newP.appendChild(textNode);
+    
+    //newP.innerText = string;
+    pyramid.appendChild(newP);
+    
   }
-  // printing star
-  for (let k = 0; k < i; k++) {
-    string += "#";
-  }
-  string += "\n";
-
-  newP = document.createElement("p");
-  newP.innerText = string;
-  document.getElementById("pyramid").appendChild(newP);
-  
 }
-});
 
-function printPyramid(height) {
+// set the default height to 5 lines
+// heightRange.value = 5;
 
-}
+heightRange.addEventListener("input", drawPyramid);
+characterSelect.addEventListener("change", drawPyramid);
+
+drawPyramid();

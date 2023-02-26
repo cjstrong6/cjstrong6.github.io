@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
+  <style>
 
-        #pyramid {
-            line-height: 0;
-            font-size: 30px;
-        }
+    #pyramid {
+      line-height: 0;
+      font-size: 30px;
+      color: blue;
+    }
 
-        body {
-            font-family: "Courier New", monospace;
-            text-align: center;
-        }
+    body {
+      font-family: "Courier New", monospace;
+      text-align: center;
+      background-color: grey;
+      color: yellow;
+    }
       
-    </style>
+  </style>
   
 </head>
 
 <body>
   
-    <h1>Mario 3</h1>
+  <h1>Mario 3</h1>
 
-    <br>
+  <br>
 
-    <p>When you say</p>
+  <p>When you say</p>
 
-    <p><strong>Draw a pyramid</strong></p>
+  <p><strong>Draw a pyramid</strong></p>
 
-    <p>I say:</p>
+  <p>I say:</p>
 
-    <br>
+  <br>
 
-    <label>How high?</label>
+  <lable for="character-select">Out of what?</lable>
+  <select id="character-select">
+    <option value="#">#</option>
+    <option value="&">&</option>
+    <option value="@">@</option>
+    <option value="$">$</option>
+  </select>
 
-    <input type="text" id="height"/>
+  <br><br>
 
-    <br><br>
+  <label for="height-range">How high?</label>
+  <input type="range" id="height-range" value="5"/>
 
-    <button id="pyramid-button">Draw a pyramid</button>
+  <br><br>
 
-    <br><br>
+<!--   <button id="pyramid-button">Draw a pyramid</button> -->
 
-    <div id="pyramid"></div>
+  <br><br>
 
-    <script src="mario.js"></script>
+  <div id="pyramid"></div>
+
+  <script src="mario.js"></script>
   
 </body>
   
