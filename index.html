@@ -1,62 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
 
-    #pyramid {
-      line-height: 0;
-      font-size: 30px;
-      color: blue;
-    }
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
 
-    body {
-      font-family: "Courier New", monospace;
-      text-align: center;
-      background-color: grey;
-      color: yellow;
-    }
-      
-  </style>
-  
+        .invalid-field {
+            border: 1px solid red;
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
 </head>
-
 <body>
-  
-  <h1>Mario 3</h1>
+    <h1>Mario 4</h1>
 
-  <br>
+    <p>When you say</p>
+    <p><strong>Draw a pyramid</strong></p>
+    <p>I say:</p>
+    <br>
 
-  <p>When you say</p>
+    <form id="draw-form">
+        <label>
+            How high?
+            <input type="text" id="height"/>
+            <label class="error-message">
+                <!-- If there was a user error, we will put a message in here -->
+            </label>
+        </label>
+        <br><br>
+        <input type="submit" value="Draw a pyramid"/>
+    </form>
 
-  <p><strong>Draw a pyramid</strong></p>
+    <br><br>
 
-  <p>I say:</p>
+    <div id="pyramid"></div>
 
-  <br>
-
-  <lable for="character-select">Out of what?</lable>
-  <select id="character-select">
-    <option value="#">#</option>
-    <option value="&">&</option>
-    <option value="@">@</option>
-    <option value="$">$</option>
-  </select>
-
-  <br><br>
-
-  <label for="height-range">How high?</label>
-  <input type="range" id="height-range" value="5"/>
-
-  <br><br>
-
-<!--   <button id="pyramid-button">Draw a pyramid</button> -->
-
-  <br><br>
-
-  <div id="pyramid"></div>
-
-  <script src="mario.js"></script>
-  
+    <script src="mario.js"></script>
 </body>
-  
 </html>
